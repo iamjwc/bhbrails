@@ -1,0 +1,94 @@
+<h1>the Birdhive Boys</h1>
+
+<div id="right">
+  <h2 class="mailing-list">Mailing List</h2>
+  <div class="mailing-list">
+    <%= form_for @contact do |f| -%>
+    <table>
+      <tr>
+        <td>
+          <%= f.label :email, "E-Mail:" -%>
+        </td>
+        <td>
+          <%= f.text_field :email -%>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= f.label :name, "Name:" -%>
+        </td>
+        <td>
+          <%= f.text_field :name -%>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="submit">
+          <input type="submit" value="Join" />
+        </td>
+      </tr>
+    </table>
+    <%- end -%>
+  </div>
+
+  <h2 class="the-corn-lady">The Corn Lady</h2>
+  <div class="the-corn-lady">
+    <p>
+      Our first EP consists of three original tracks and one of our favorite standards.
+      Please download it and let us know what you think.
+    </p>
+    <ol>
+      <li>Honest Man <em>A. Koehler</em></li>
+      <li>Honey, You Don't Know My Mind <em>J. Skinner</em></li>
+      <li>Use Me Like You Used To <em>S. Bruce</em></li>
+      <li>Mirror On The Wall <em>Z. Bruce</em></li>
+    </ol>
+
+    <a href="#">Download <em>The Corn Lady</em></a>
+  </div>
+
+  <!--h2>Upcoming Shows</h2>
+  <div class="gigs small">
+    <table>
+      <tr>
+        <td>
+          <div class="date"><div class="month">Mar</div><div class="day">18</div></div>
+          <strong>St. Patty's Day Show (Singing songs about booze and violence)</strong>
+          <a href="#">Jalopy Theater</a> at 8pm
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="date"><div class="month">Jan</div><div class="day">21</div></div>
+          <strong>Sycamore w/ Jen Larson</strong>
+          <a href="#">Sycamore</a> at 8pm
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="date"><div class="month">Feb</div><div class="day">1</div></div>
+          <strong>Sycamore w/ Jen Larson</strong>
+          <a href="#">Sycamore</a> at 8pm
+        </td>
+      </tr>
+    </table>
+  </div-->
+
+</div>
+
+<div id="left">
+  <h2>Upcoming Shows</h2>
+  <div class="gigs">
+    <table>
+      <%= render @shows -%>
+      <%= render 'shows/form' -%>
+    </table>
+  </div>
+
+  <h2 class="biography">Biography</h2>
+  <div class="biography">
+    <img src="./images/boys.jpg" />
+      <p>Shizznit <a href="javascript:(function(){ document.querySelector('img').src = 'http://www.bestweekever.tv/bwe/images/2009/02/DANCING_BABY.gif'})();">ipsum dolizzle sit amet</a>, sizzle adipiscing elizzle. Nullizzle black velizzle, fizzle volutpat, yo quis, shizznit vizzle, dizzle. Pellentesque egizzle tortor. Sed mah nizzle. Sheezy at dolor dapibizzle turpis tempizzle shut the shizzle up. Maurizzle pellentesque dope izzle turpizzle. Its fo rizzle izzle gangsta. Pellentesque nizzle rhoncizzle crunk. In hizzle habitasse platea dictumst. Bizzle dapibus. Curabitizzle urna, bizzle eu, sure, eleifend vitae, nunc. Dizzle dizzle. Integer sempizzle velizzle sizzle purizzle.</p>
+      <p>Vestibulum rizzle dope primis izzle faucibus orci gangster mah nizzle ultrices posuere cubilia Curae; Check it out vitae crackalackin quizzle dang ornare aliquizzle. Phasellizzle euismod check it out. Check it out volutpizzle fizzle uhuh ... yih!. Praesent rizzle shit, fo shizzle vitae, gravida sed, interdizzle vitae, phat. Etiam go to hizzle bling bling maurizzle. Sed izzle elizzle izzle own yo' porta laoreet. Pimpin' sizzle dawg. Vivamizzle sagittis. Shit eu lacizzle quis lacus posuere doggy. Tellivizzle id fo shizzle a felizzle fo shizzle mollizzle. Integer odio. Nam scelerisque. Quisque magna eros, dignissim vitae, porttitizzle pizzle, imperdizzle egestizzle, orci. You son of a bizzle commodo shiznit dope. Pimpin' sollicitudizzle tristique sizzle. Dizzle mi erizzle, fo shizzle yo mamma, pellentesque bow wow wow, ultricizzle pot, nizzle. Fusce erizzle mauris, facilisis shit, sollicitudizzle bow wow wow, aliquet izzle, lectus. Shizzlin dizzle sure break it down, varizzle things, adipiscing ghetto, crunk sit amizzle, enim.</p>
+      <p>Integer izzle metizzle daahng dawg the bizzle mofo aliquizzle. Quisque posuere. Sed nizzle ante. Dizzle bling bling phat, mammasay mammasa mamma oo sa izzle, mammasay mammasa mamma oo sa izzle, euismod nizzle, massa. fizzle. Ut vehicula ultricizzle leo. Quisque away, orci a dang shizzlin dizzle, enizzle the bizzle commodo tellizzle, my shizz eleifend dizzle pimpin' nec metizzle. Maecenas feugiat sollicitudin velit. Quisque neque mauris, nonummy izzle, fo izzle, bibendum varius, elit. In iaculis, ligula vizzle stuff hendrerit, velizzle doggy posuere my shizz, a uhuh ... yih! justo lorem sit izzle augue. Pot izzle crackalackin shiznit fo shizzle fermentum sheezy. Quisque crunk tempor justo. Nizzle vehicula hendrerizzle mauris. Suspendisse vehicula. Cras fo leo mofo mi. Shut the shizzle up pellentesque. In hizzle tellivizzle platea dictumst. Crizzle gangsta leo phat dizzle mofo shizznit. Break yo neck, yall black , pulvinizzle quis, fringilla a, mah nizzle things, nisl. Away break yo neck, yall nibh izzle sure ass gangsta.</p>
+  </div>
+</div>

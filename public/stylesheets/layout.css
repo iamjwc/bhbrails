@@ -1,0 +1,209 @@
+@import "reset.css";
+
+body {
+  font-size: 62.5%; /* Causes base font size to be ~10px */
+  font-size: 1em;
+
+  font-family: Georgia, 'Times New Roman';
+
+  background: #b5c2c4 url('/images/bg.png') repeat-x;
+}
+
+h1 {
+  text-indent: -100000px;
+  height: 80px;
+  background: transparent url('/images/the-birdhive-boys.png') no-repeat left center;
+
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+#main {
+  width: 900px;
+  margin: 10px auto;
+  padding: 50px;
+
+  background-color: #fff;
+  color: #222a2c;
+  font-size: 0.8em;
+  line-height: 2.0em;
+
+  -moz-box-shadow: 0 3px 8px #333;
+  -webkit-box-shadow: 0 3px 8px #333;
+  box-shadow: 0 3px 8px #333;
+
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+
+a {
+  color: #c32b20;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h2:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 20px;
+  text-indent: -100000px;
+  height: 31px;
+  background: transparent url('/images/upcoming_shows.png') no-repeat left center;
+}
+h2.mailing-list {
+  background-image: url('/images/mailing-list.png');
+}
+h2.biography {
+  background-image: url('/images/biography.png');
+}
+h2.the-corn-lady {
+  background-image: url('/images/the-corn-lady.png');
+}
+
+
+#main #left {
+  width: 600px;
+}
+
+#main #right {
+  float: right;
+  width: 280px;
+}
+
+
+#left > div, #right > div {
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top: 4px solid #0f0;
+}
+
+#left > div, #right > div { border-color: #c32b20; border-color: #e00; }
+a                         {        color: #c32b20; color: #e00; }
+
+table {
+  width: 100%;
+}
+
+table tr td {
+  line-height: 1.5em;
+  vertical-align: middle;
+  padding: 10px 0 ;
+}
+
+#left > .gigs, #right > .gigs {
+  padding-top: 0;
+}
+
+.gigs table strong {
+  display: block;
+}
+
+.gigs.small table .date {
+  float: right;
+  padding: 0;
+}
+
+.gigs table .date {
+  width: 50px;
+  font-family: Futura;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  line-height: 1.25em;
+  padding-right: 10px;
+}
+.gigs table .date .month {
+  font-size: 0.8em;
+}
+.gigs table .date .day {
+  font-size: 1.8em;
+}
+
+.gigs table tr {
+  border-bottom: 1px dotted #d0d0d0;
+}
+
+.mailing-list table {
+
+}
+
+.mailing-list table td {
+  padding: 2px 0;
+}
+
+.mailing-list table label {
+  font-weight: bold;
+}
+
+.mailing-list table input[type=text],
+.mailing-list table input[type=email] {
+  border: 1px solid #222a2c;
+  width: 100%;
+  padding: 3px;
+  margin-left: -7px;
+}
+.mailing-list table input[type=submit] {
+  width: 50px;
+}
+
+
+.mailing-list table .submit {
+  text-align: right;
+  border-width: 0;
+}
+
+
+.biography img {
+  width: 574px;
+  border: 3px solid #000;
+}
+.biography p {
+  text-indent: 2em;
+}
+
+
+.the-corn-lady {
+  font-size: 0.9em;
+}
+
+.the-corn-lady ol {
+  margin-left: 2em;
+  margin-bottom: 10px;
+  color: #222a2c;
+}
+
+.the-corn-lady a {
+  display: block;
+  background: #fff url('/images/download-arrow.png') no-repeat 12px 12px;
+  padding: 10px;
+  padding-left: 41px;
+  border: 1px dotted #d0d0d0;
+}
+
+.the-corn-lady a:hover {
+  background-color: #222a2c;
+  color: #fff;
+}
+
+.the-corn-lady a em {
+  font-weight: bold;
+}
+
+.the-corn-lady li em {
+  color: #222a2c;
+  font-size: 0.8em;
+  float: right;
+  margin-right: 8px;
+}
+
+
+
+

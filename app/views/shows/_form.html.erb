@@ -1,0 +1,55 @@
+<tr>
+  <td>
+    <%= form_for @new_show do |f| -%>
+    <table>
+      <tr>
+        <td>
+          <%= f.label :month, "Month:" -%>
+        </td>
+        <td>
+          <%= f.text_field :month -%>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= f.label :day, "Day:" -%>
+        </td>
+        <td>
+          <%= f.text_field :day -%>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= f.label :time, "Time:" -%>
+        </td>
+        <td>
+          <%= f.text_field :time -%>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= f.label :title, "Title:" -%>
+        </td>
+        <td>
+          <%= 'f.text_field :title' -%>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <%= f.label :venue, "Venue:" -%>
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="submit">
+          <input type="submit" value="Create" />
+        </td>
+      </tr>
+    </table>
+    <%- end -%>
+
+    <strong>St. Patty's Day Show (Singing songs about booze and violence)</strong>
+    <a href="#"><%= show.venue -%></a> at <%= show.play_at.hour -%>
+  </td>
+</tr>
