@@ -1,0 +1,8 @@
+<h3>Edit Show</h3>
+
+<%= form_for @show do |f| -%>
+  <%= render :partial => 'form', :locals => {:f => f} %>
+
+  <input type="submit" value="Update" />
+<%- end -%>
+

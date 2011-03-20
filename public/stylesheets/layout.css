@@ -6,13 +6,16 @@ body {
 
   font-family: Georgia, 'Times New Roman';
 
-  background: #b5c2c4 url('/images/bg.png') repeat-x;
+  background: #2A343E;
+  /*
+  background: #211c18;
+  */
 }
 
 h1 {
   text-indent: -100000px;
-  height: 80px;
-  background: transparent url('/images/the-birdhive-boys.png') no-repeat left center;
+  height: 580px;
+  background: transparent url('/sf.jpg') no-repeat center;
 
   margin-top: -10px;
   margin-bottom: 20px;
@@ -180,7 +183,7 @@ table tr td {
   color: #222a2c;
 }
 
-.the-corn-lady a {
+.the-corn-lady a.download {
   display: block;
   background: #fff url('/images/download-arrow.png') no-repeat 12px 12px;
   padding: 10px;
@@ -188,12 +191,12 @@ table tr td {
   border: 1px dotted #d0d0d0;
 }
 
-.the-corn-lady a:hover {
+.the-corn-lady a.download:hover {
   background-color: #222a2c;
   color: #fff;
 }
 
-.the-corn-lady a em {
+.the-corn-lady a.download em {
   font-weight: bold;
 }
 

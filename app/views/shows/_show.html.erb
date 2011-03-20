@@ -1,8 +1,12 @@
 <tr>
-  <td class="date"><div class="month"><%= @new_show.play_at.month -%></div><div class="day"><%= @new_show.play_at.day -%></div></td>
+  <td class="date"><div class="month"><%= month_for(show.play_at) -%></div><div class="day"><%= show.play_at.day -%></div></td>
   <td>
-    <strong>St. Patty's Day Show (Singing songs about booze and violence)</strong>
-    <a href="#"><%= @new_show.venue -%></a> at <%= @new_show.play_at.hour -%>
+    <strong><%= show.title -%></strong>
+    <%= show.venue_link ? link_to(show.venue, show.venue_link) : show.venue -%> at <%= time_for(show.play_at) -%>
   </td>
+
+  <% if @edit %>
+    <td><%= link_to "Edit", edit_show_url(show) -%></td>
+  <% end %>
 </tr>
 

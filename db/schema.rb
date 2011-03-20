@@ -10,13 +10,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110207014134) do
+ActiveRecord::Schema.define(:version => 20110319224516) do
 
   create_table "contacts", :force => true do |t|
     t.string   "name"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "is_street_team"
   end
 
   create_table "shows", :force => true do |t|
@@ -25,6 +26,7 @@ ActiveRecord::Schema.define(:version => 20110207014134) do
     t.datetime "play_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "venue_link"
   end
 
 end

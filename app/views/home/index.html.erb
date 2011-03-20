@@ -5,24 +5,14 @@
   <div class="mailing-list">
     <%= form_for @contact do |f| -%>
     <table>
-      <tr>
-        <td>
-          <%= f.label :email, "E-Mail:" -%>
-        </td>
-        <td>
-          <%= f.text_field :email -%>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <%= f.label :name, "Name:" -%>
-        </td>
-        <td>
-          <%= f.text_field :name -%>
-        </td>
-      </tr>
+      <tr> <td><%= f.label :email, "E-Mail:" -%></td> <td><%= f.text_field :email -%></td> </tr>
+      <tr> <td><%= f.label :name, "Name:" -%></td>    <td><%= f.text_field :name -%></td> </tr>
       <tr>
         <td colspan="2" class="submit">
+          <label for="contact_is_street_team">Join <%= link_to 'Street Team', '#whatsstreetteam' -%>
+            <%= f.check_box :is_street_team -%>
+          </label>
+
           <input type="submit" value="Join" />
         </td>
       </tr>
@@ -36,42 +26,17 @@
       Our first EP consists of three original tracks and one of our favorite standards.
       Please download it and let us know what you think.
     </p>
+
+    <div id="player"></div> 
     <ol>
-      <li>Honest Man <em>A. Koehler</em></li>
-      <li>Honey, You Don't Know My Mind <em>J. Skinner</em></li>
-      <li>Use Me Like You Used To <em>S. Bruce</em></li>
-      <li>Mirror On The Wall <em>Z. Bruce</em></li>
+      <li class="track1"><a href="/the-corn-lady/honestman.mp3">Honest Man</a> <em>A. Koehler</em></li>
+      <li class="track2"><a href="/the-corn-lady/honey.mp3">Honey, You Don't Know My Mind</a> <em>J. Skinner</em></li>
+      <li class="track3"><a href="/the-corn-lady/useme.mp3">Use Me Like You Used To</a> <em>S. Bruce</em></li>
+      <li class="track4"><a href="/the-corn-lady/mirror.mp3">Mirror On The Wall</a> <em>Z. Bruce</em></li>
     </ol>
 
-    <a href="#">Download <em>The Corn Lady</em></a>
+    <a href="/the-corn-lady.zip" class="download">Download <em>The Corn Lady</em></a>
   </div>
-
-  <!--h2>Upcoming Shows</h2>
-  <div class="gigs small">
-    <table>
-      <tr>
-        <td>
-          <div class="date"><div class="month">Mar</div><div class="day">18</div></div>
-          <strong>St. Patty's Day Show (Singing songs about booze and violence)</strong>
-          <a href="#">Jalopy Theater</a> at 8pm
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="date"><div class="month">Jan</div><div class="day">21</div></div>
-          <strong>Sycamore w/ Jen Larson</strong>
-          <a href="#">Sycamore</a> at 8pm
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <div class="date"><div class="month">Feb</div><div class="day">1</div></div>
-          <strong>Sycamore w/ Jen Larson</strong>
-          <a href="#">Sycamore</a> at 8pm
-        </td>
-      </tr>
-    </table>
-  </div-->
 
 </div>
 
@@ -80,8 +45,11 @@
   <div class="gigs">
     <table>
       <%= render @shows -%>
-      <%= render 'shows/form' -%>
     </table>
+
+    <% if @edit %>
+      <%= link_to "Add Show", new_show_url -%>
+    <% end %>
   </div>
 
   <h2 class="biography">Biography</h2>

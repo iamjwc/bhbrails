@@ -5,6 +5,7 @@ BirdhiveBoys::Application.routes.draw do
   # first created -> highest priority.
 
   match '/' => 'home#index', :as => :home
+  match '/edit' => 'home#edit', :as => :edit
 
   resources :contacts
   resources :shows

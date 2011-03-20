@@ -1,2 +1,15 @@
-// Place your application-specific JavaScript functions and classes here
-// This file is automatically included by javascript_include_tag :defaults
+$(function() {
+  $('#player').jPlayer({
+    supplied: "mp3"
+  });
+
+  $('.the-corn-lady ol a').click(function() {
+    var href = $(this).attr('href');
+
+    $('#player').jPlayer("pauseOthers");
+    $('#player').jPlayer("setMedia", {mp3: href});
+    $('#player').jPlayer("play");
+
+    return false
+  })
+})
