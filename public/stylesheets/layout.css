@@ -209,5 +209,8 @@ table tr td {
 }
 
 
+tr.street_team {
+  background-color: #aaa;
+}
 
 

@@ -1,0 +1,19 @@
+<h3>Mailing List</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @contacts.each do |contact| %>
+    <tr class="<%= "street_team" if contact.is_street_team %>">
+      <td><%= contact.email %></td>
+      <td><%= contact.name %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+
