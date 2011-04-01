@@ -12,6 +12,8 @@ class ContactsController < ApplicationController
 
         MailingListMailer.notify_admin(@contact).deliver
         MailingListMailer.notify_user(@contact).deliver
+
+        flash[:info] = "Thank you for joining our mailing list"
       else
         flash[:error] = "Invalid Email"
       end
